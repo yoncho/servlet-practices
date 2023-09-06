@@ -12,7 +12,7 @@
 	//date
 	java.util.Date utilDate = new java.util.Date();
 	long currentMilliseconds = utilDate.getTime();
-	Date date = new Date(utilDate.getTime());
+	Date date = new Date(currentMilliseconds);
 	
 	GuestbookVo vo = new GuestbookVo();
 	vo.setName(name);

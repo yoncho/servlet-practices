@@ -27,12 +27,13 @@
 		</table>
 	</form>
 	<%
+		int i = list.size();
 		for (GuestbookVo vo : list){
 	%>
 	<br>
 	<table width=510 border=1>
 		<tr>
-			<td>[<%=vo.getNo()%>]</td>
+			<td>[<%=i%>]</td>
 			<td><%=vo.getName()%></td>
 			<td><%=vo.getRegDate()%></td>
 			<td><a href="deleteform.jsp?no=<%=vo.getNo()%>">삭제</a></td>
@@ -42,6 +43,7 @@
 		</tr>
 	</table>
 	<%
+			i--;
 		}
 	%>
 </body>
