@@ -16,7 +16,8 @@ public class HelloServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		PrintWriter pw = response.getWriter();
 		
-		pw.print("<h1>안녕웹</h1>"); //servlet만으론 web 만들 수 없음...
+		String name = request.getParameter("name");
+		pw.print("hello " + name); //servlet만으론 web 만들 수 없음...
 		
 	}
 	

@@ -9,5 +9,7 @@
 <body>
 	<h1>hello world</h1>
 	
+	<a href="/helloweb/hello?name=yoncho">누르세요</a>
+	
 </body>
 </html>
