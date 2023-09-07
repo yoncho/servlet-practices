@@ -3,7 +3,7 @@
 <%@page import="com.poscodx.emaillist.vo.EmaillistDao"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List<EmaillistVo> list = new EmaillistDao().findAll();
+	List<EmaillistVo> list = (List<EmaillistVo>)request.getAttribute("list");
 %>
 
 <html>
@@ -39,7 +39,7 @@
 	}
 	%>
 	<p>
-		<a href="/emaillist01/form.jsp">리스트</a>
+		<a href="/emaillist02/el?a=form">추가메일 등록</a>
 	</p>
 	<br>
 </body>
