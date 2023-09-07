@@ -12,7 +12,10 @@ import java.util.List;
 import com.poscodx.emaillist.dao.EmaillistVo;
 
 public class EmaillistDao {
-
+	private final String URL = "jdbc:mariadb://192.168.0.181:3307/webdb?charset=utf8";
+	private final String ID = "bookmall";
+	private final String PW = "bookmall";
+	
 	public boolean insert(EmaillistVo vo) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -156,7 +159,7 @@ public class EmaillistDao {
 		try {
 			Class.forName("org.mariadb.jdbc.Driver");
 			String url = "jdbc:mariadb://192.168.0.181:3307/webdb?charset=utf8";
-			conn = DriverManager.getConnection(url, "yoncho", "tkaak1212");
+			conn = DriverManager.getConnection(URL, ID, PW);
 			
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패 : " + e);
