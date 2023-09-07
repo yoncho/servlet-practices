@@ -41,11 +41,17 @@ public class GuestbookController extends HttpServlet {
 			vo.setContents(contents);
 			vo.setRegDate(date);
 			
+			//insert
 			new GuestbookDao().insert(vo);
+			
+			//redirection
 			response.sendRedirect("/guestbook02/gb");
 		}else if ("delete".equals(action)) {
+			//get No & Password
 			String no = request.getParameter("no");
 			String password = request.getParameter("password");
+			
+			//delete
 			new GuestbookDao().delete(Integer.parseInt(no), password);
 			response.sendRedirect("/guestbook02/gb");
 		}else if ("deleteForm".equals(action)) {
