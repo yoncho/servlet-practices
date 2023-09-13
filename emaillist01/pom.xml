@@ -43,6 +43,12 @@
 		<finalName>emaillist01</finalName>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.2</version> <!--이렇게 명시하는 경우 option을 줄때!-->
+			</plugin>
+			
+			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version> <!--이렇게 명시하는 경우 option을 줄때!-->
@@ -51,6 +57,6 @@
 					<server>poscodx-tomcat</server>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins>	
 	</build>
 </project>
