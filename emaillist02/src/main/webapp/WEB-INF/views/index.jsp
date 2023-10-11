@@ -1,6 +1,5 @@
 <%@page import="com.poscodx.emaillist.dao.EmaillistVo"%>
 <%@page import="java.util.List"%>
-<%@page import="com.poscodx.emaillist.vo.EmaillistDao"%>
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	List<EmaillistVo> list = (List<EmaillistVo>)request.getAttribute("list");

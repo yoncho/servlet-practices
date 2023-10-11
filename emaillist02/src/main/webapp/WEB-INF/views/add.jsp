@@ -1,5 +1,3 @@
-<%@page import="com.poscodx.emaillist.dao.EmaillistVo"%>
-<%@page import="com.poscodx.emaillist.vo.EmaillistDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	
